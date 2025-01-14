@@ -15,6 +15,7 @@ PRIVATE_KEY=your_private_key_here
 ALCHEMY_API_URL=https://eth-sepolia.g.alchemy.com/v2/your_alchemy_key_here
 
 Replace your_private_key_here with your wallet's private key.
+
 Replace your_alchemy_key_here with your Sepolia RPC URL.
 
 ⚠️ Important: Keep your .env file private and never share your private key.
