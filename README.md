@@ -1,3 +1,7 @@
+DecentralizedBank Project
+
+I developed a decentralized banking application (DApp) using Ethereum and the Sepolia testnet. The project includes smart contracts for deposits, withdrawals, and balance checking, integrated with a modern React.js frontend. The DApp provides a transparent and secure way to manage funds on the blockchain. 
+
 DecentralizedBank
 
 How to Run the Program
