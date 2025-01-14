@@ -11,6 +11,7 @@ Open the .env file in the root of the project.
 Add your Ethereum private key and the Sepolia testnet URL (e.g., from Alchemy or Infura) in the following format:
 
 PRIVATE_KEY=your_private_key_here
+
 ALCHEMY_API_URL=https://eth-sepolia.g.alchemy.com/v2/your_alchemy_key_here
 
 Replace your_private_key_here with your wallet's private key.
