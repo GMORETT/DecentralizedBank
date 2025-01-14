@@ -25,20 +25,25 @@ To deploy the contract:
 Run the deployment script using Hardhat:
 
 npx hardhat run scripts/deploy.js --network sepolia
+
 Once deployed, you will see the contract address in the console. Copy this address for the next step.
 
 3. Update the Frontend with the Contract Information
+
 After deploying the contract, update the frontend configuration:
 
 Add the Contract Address:
 
 Open src/utils/contract.js (or contract.ts if using TypeScript).
+
 Replace the placeholder CONTRACT_ADDRESS with the deployed contract address:
 
 const contractAddress = "<YOUR_CONTRACT_CODE>"; // Substitua pelo endereço do contrato
+
 Update the ABI:
 
 Replace the existing ABI in CONTRACT_ABI with the ABI generated during deployment.
+
 You can find the ABI in the artifacts/contracts/YourContractName.json file, under the abi field.
 
 4. Run the Frontend
