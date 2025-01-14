@@ -1,0 +1,148 @@
+:root {
+  --background-color: #1c1b29; 
+  --primary-color: #7e5ea0;  
+  --accent-color: #a78bfa;    
+  --text-color: #ffffff;      
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; 
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/background.png') center/cover no-repeat; 
+  opacity: 0.9; 
+  z-index: -1; 
+}
+
+.containers-wrapper {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 750px; 
+  height: 100%; 
+  width: 100%;
+}
+
+.app-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+.app-container-right {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+
+h1, h2 {
+  margin: 10px 0;
+  color: #DC30EE;
+}
+
+p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #6867E4;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.overlay {
+  position: fixed;
+  top: 50%; 
+  left: 176%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  padding: 20px;
+  border-radius: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+  width: 150px; 
+  height: 150px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(255, 255, 255, 0.3); 
+  border-top: 4px solid #7e5ea0; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite; 
+}
+
+.success-modal {
+  color: var(--text-color); 
+  font-size: 15px; 
+  text-align: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
